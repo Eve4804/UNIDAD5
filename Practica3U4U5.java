@@ -19,16 +19,14 @@ public class Practica3U4U5 {
             {88.0, 76.5, 89.0, 94.5},
             {70.0, 82.5, 91.0, 87.5},
         };
-        for (int i = 0; i < calificaciones.length; i++) {
-            for (int j = 0; j < calificaciones[i].length; j++) {
-
-            }
-            double[] promedio = Practica3U4U5.promediomateria(calificaciones, i, i);
-            System.out.println("El promedio por materia es: " + promedio);
-            double [] promedioestu = Practica3U4U5.promedioestudiante(calificaciones);
-            System.out.println("El promedio por estudiante es: " + promedioestu);
-
-        }
+       double [] promMate = Practica3U4U5.promediomateria(calificaciones,3,4);
+       for (double a: promMate){
+           System.out.println(a);    
+       }
+       double [] promEstu = Practica3U4U5.promedioestudiante(calificaciones);
+       for(double o : promEstu){
+           System.out.println(o);
+       }
 
     }
 
